@@ -9,7 +9,7 @@
   <dependencies>
       <dependency>
           <groupId>com.lhl</groupId>
-          <artifactId>example-rpc-easy</artifactId>
+          <artifactId>example-rpc-core</artifactId>
           <version>1.0-SNAPSHOT</version>
       </dependency>
       <dependency>
