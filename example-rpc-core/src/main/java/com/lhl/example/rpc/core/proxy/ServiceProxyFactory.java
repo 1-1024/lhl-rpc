@@ -1,4 +1,4 @@
-package com.lhl.example.rpc.proxy;
+package com.lhl.example.rpc.core.proxy;
 
 import java.lang.reflect.Proxy;
 
