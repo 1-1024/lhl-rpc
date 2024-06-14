@@ -2,7 +2,6 @@ package com.lhl.example.provider;
 
 import com.lhl.example.common.service.UserService;
 import com.lhl.example.rpc.core.RpcApplication;
-import com.lhl.example.rpc.core.utils.ClassPathResourceUtils;
 import com.lhl.example.rpc.registry.LocalRegistry;
 import com.lhl.example.rpc.server.HttpServer;
 import com.lhl.example.rpc.server.VertxHttpServer;

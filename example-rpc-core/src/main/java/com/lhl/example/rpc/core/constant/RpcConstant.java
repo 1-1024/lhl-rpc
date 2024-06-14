@@ -17,4 +17,24 @@ public interface RpcConstant {
      * 默认地址
      */
     String DEFAULT_HOST = "http://localhost:8080";
+
+    /**
+     * JDK
+     */
+    String JDK = "jdk";
+
+    /**
+     * JSON
+     */
+    String JSON = "json";
+
+    /**
+     * Kryo
+     */
+    String KRYO = "kryo";
+
+    /**
+     * Hessian
+     */
+    String HESSIAN = "hessian";
 }

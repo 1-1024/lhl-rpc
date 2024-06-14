@@ -1,10 +1,11 @@
 package com.lhl.example.rpc.core.server;
 
+import com.lhl.example.rpc.core.RpcApplication;
+import com.lhl.example.rpc.core.serializer.Serializer;
+import com.lhl.example.rpc.core.serializer.SerializerFactory;
 import com.lhl.example.rpc.model.RpcRequest;
 import com.lhl.example.rpc.model.RpcResponse;
 import com.lhl.example.rpc.registry.LocalRegistry;
-import com.lhl.example.rpc.serializer.JdkSerializer;
-import com.lhl.example.rpc.serializer.Serializer;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
@@ -27,7 +28,7 @@ public class HttpServiceHandle implements Handler<HttpServerRequest> {
     @Override
     public void handle(HttpServerRequest request) {
         // 指定序列化器
-        final Serializer serializer = new JdkSerializer();
+        Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
         // 记录日志
         LOGGER.info("Received request : {}, {}", request.method(), request.uri());
         // 异步处理 Http 请求

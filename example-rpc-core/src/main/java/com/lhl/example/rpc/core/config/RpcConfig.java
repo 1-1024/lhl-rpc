@@ -1,5 +1,6 @@
 package com.lhl.example.rpc.core.config;
 
+import com.lhl.example.rpc.core.constant.RpcConstant;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -32,4 +33,9 @@ public class RpcConfig {
      * 服务器端口号
      */
     private Integer serverPort = 8080;
+
+    /**
+     * 序列化器
+     */
+    private String serializer = RpcConstant.JDK;
 }

@@ -1,0 +1,4 @@
+jdk=com.lhl.example.rpc.core.serializer.JdkSerializer
+hessian=com.lhl.example.rpc.core.serializer.HessianSerializer
+json=com.lhl.example.rpc.core.serializer.JsonSerializer
+kryo=com.lhl.example.rpc.core.serializer.KryoSerializer
